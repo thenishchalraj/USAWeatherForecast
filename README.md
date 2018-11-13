@@ -5,3 +5,6 @@ Clone/Download the repository and run using
 `python3 Silicon*.py`
 
 and you can see the same forecast as it is here https://forecast.weather.gov/MapClick.php?lat=37.37&lon=-122.04
+
+
+BTW, this was just my practice of scrapping using python.
