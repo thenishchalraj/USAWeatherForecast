@@ -8,3 +8,5 @@ and you can see the same forecast as it is here https://forecast.weather.gov/Map
 
 
 BTW, this was just my practice of scrapping using python.
+
+If want to do the same thing using NodeJS : https://blog.bitsrc.io/https-blog-bitsrc-io-how-to-perform-web-scraping-using-node-js-5a96203cb7cb
