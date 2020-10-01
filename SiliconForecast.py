@@ -2,9 +2,16 @@
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
+import urllib.parse
+
+address = input("Enter the address: ")
+url = 'https://nominatim.openstreetmap.org/search/' + urllib.parse.quote(address) +'?format=json'
+resp = requests.get(url).json()
+
+search = 'https://forecast.weather.gov/MapClick.php?lat=' + urllib.parse.quote(resp[0]["lat"]) + '&lon=' + urllib.parse.quote(resp[0]["lon"])
 
 #get the page as a response with all the details
-page = requests.get("https://forecast.weather.gov/MapClick.php?lat=37.37&lon=-122.04")
+page = requests.get(search)
 
 #parsing the page to get the useful content
 soup = BeautifulSoup(page.content, 'html.parser')
