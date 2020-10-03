@@ -3,8 +3,9 @@ import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 import urllib.parse
+from toAscii import ConvertImages
 
-
+soup = ""
 class WeatherInfo():
     disclaimer = """
 This script is only for educational purpose. 
@@ -22,6 +23,7 @@ Please do check your region's law & regulations before web scraping any website.
         self.descriptions = []
 
     def parsedata(self):
+        global soup
         # Fetching geo-coordinates for the address
         openstreetmap_url = f'https://nominatim.openstreetmap.org/search/{urllib.parse.quote(self.address)}?format=json'
         map_json_data = requests.get(openstreetmap_url).json()
@@ -56,8 +58,10 @@ Please do check your region's law & regulations before web scraping any website.
 
         self.descriptions = [description["title"] for description in
                              seven_days_forecast.select(".tombstone-container img")]
+        
+        self.imgs = ConvertImages(soup)
 
-        return self.timeperiods, self.short_descriptions, self.temperatures, self.descriptions
+        return self.timeperiods, self.short_descriptions, self.temperatures, self.descriptions, self.imgs
 
     def pandas_data(self):
         # Generating the Pandas DataFrame from the data output from function 'parsedata'
@@ -66,10 +70,10 @@ Please do check your region's law & regulations before web scraping any website.
             "Time Period": self.timeperiods,
             "Temperature": self.temperatures,
             "Short Description": self.short_descriptions,
-            "Description": self.descriptions
+            "Description": self.descriptions,
         })
 
-        return self.weather_data.head(2)  # Remove .head, if you wish to preview all the extracted data
+        return self.weather_data  # Remove .head, if you wish to preview all the extracted data
 
     def pandas_to_csv(self):
         # Converting the Pandas DataFrame data in the Comma Separated Value format.
@@ -79,7 +83,8 @@ Please do check your region's law & regulations before web scraping any website.
 
 # Calling the class WeatherInfo() and providing geo-coordinates (e.g. latitude, longitude) of the location
 
-us_weather = WeatherInfo("California, US")
+location = input("Please enter location: ")
+us_weather = WeatherInfo(location)
 
 # Calling the Class function 'parsedata' and Printing the extracted data
 
@@ -87,6 +92,7 @@ us_weather.parsedata()
 
 # To print the data from function parsedata(), then use print function as shown in the below line command
 # print(san_francisco_weather.parsedata())
+
 
 print(us_weather.pandas_data())
 
