@@ -4,6 +4,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 import urllib.parse
 from toAscii import ConvertImages
+from covidReporter import Reports
 
 soup = ""
 class WeatherInfo():
@@ -36,6 +37,9 @@ Please do check your region's law & regulations before web scraping any website.
         # Extracting the essential data from the scraped data
 
         seven_days_forecast = soup.find(id="seven-day-forecast")
+        if not bool(seven_days_forecast):
+            print("Can't find the place")
+            return
 
         # Filtering Raw Data from variable seven_days_forecast
 
@@ -95,6 +99,8 @@ us_weather.parsedata()
 
 
 print(us_weather.pandas_data())
+print("\n")
+Reports(location)
 
 # To save the weather report in Comma Separated Value format (aka .csv), just uncomment the below line command
 
