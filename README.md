@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ## Usage
 Run using:
 ```sh
-python3 Silicon*.py
+python3 USA*.py
 ```
 and you can see the same forecast as it is here https://forecast.weather.gov/MapClick.php?lat=37.37&lon=-122.04
 
@@ -47,3 +47,9 @@ If want to do the same thing using NodeJS : https://blog.bitsrc.io/https-blog-bi
 </a>
 <!-- [![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
  -->
+
+
+### Contribution guide
+* Look for issues and ask for assignment.
+* Improve UI for the project and send a PR.
+* Add any feature you think should be relevant.
