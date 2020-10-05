@@ -32,6 +32,6 @@ BTW, this was just my practice of scraping using python which got contributions 
 If want to do the same thing using NodeJS : https://blog.bitsrc.io/https-blog-bitsrc-io-how-to-perform-web-scraping-using-node-js-5a96203cb7cb
 
 ## Contributors
-[![](https://opencollective.com/USAWeatherForecast/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/USAWeatherForecast/graphs/contributors)
+[![](https://opencollective.com/USAWeatherForecast/contributors.svg?width=890&button=false)](https://github.com/thenishchalraj/USAWeatherForecast/graphs/contributors)
 <!-- [![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
  -->
