@@ -97,6 +97,18 @@ us_weather.parsedata()
 # To print the data from function parsedata(), then use print function as shown in the below line command
 # print(san_francisco_weather.parsedata())
 
+print("""
+    
+   __  _______ ___       _       __           __  __                 ______                                __ 
+  / / / / ___//   |     | |     / ___  ____ _/ /_/ /_  ___  _____   / ________  ________  _________ ______/ /_
+ / / / /\__ \/ /| |     | | /| / / _ \/ __ `/ __/ __ \/ _ \/ ___/  / /_  / __ \/ ___/ _ \/ ___/ __ `/ ___/ __/
+/ /_/ /___/ / ___ |     | |/ |/ /  __/ /_/ / /_/ / / /  __/ /     / __/ / /_/ / /  /  __/ /__/ /_/ (__  / /_  
+\____//____/_/  |_|     |__/|__/\___/\__,_/\__/_/ /_/\___/_/     /_/    \____/_/   \___/\___/\__,_/____/\__/  
+                                                                                                              
+                                                                    -By thenischalraj
+                                                                        Sourced from forecast.weather.gov
+""")
+
 
 print(us_weather.pandas_data())
 print("\n")
