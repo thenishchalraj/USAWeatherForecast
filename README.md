@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ## Usage
 Run using:
 ```sh
-python3 Silicon*.py
+python3 USA*.py
 ```
 and you can see the same forecast as it is here https://forecast.weather.gov/MapClick.php?lat=37.37&lon=-122.04
 
