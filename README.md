@@ -34,17 +34,16 @@ If want to do the same thing using NodeJS : https://blog.bitsrc.io/https-blog-bi
 ## Contributors
 <!-- [![](https://github.com/USAWeatherForecast/contributors.svg?width=890&button=false)](https://github.com/thenishchalraj/USAWeatherForecast/graphs/contributors) -->
 <a href="https://github.com/thenishchalraj">
-  <img src="https://avatars3.githubusercontent.com/u/15857220?s=64&v=4">
-</a>
+  Nishchal Raj
+</a><br>
 <a href="https://github.com/devabhishekpal">
-  <img src="https://avatars0.githubusercontent.com/u/43001336?s=64&v=4">
-</a>
+  Abhishek Pal
+</a><br>
 <a href="https://github.com/anshik1998">
-  <img src="https://avatars2.githubusercontent.com/u/54910667?s=64&v=4">
-</a>
+  Anshik
+</a><br>
 <a href="https://github.com/jmkeol">
-  <img src="https://avatars1.githubusercontent.com/u/63786778?s=64&v=4">
+  Jmkeol
 </a>
-
 <!-- [![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
  -->
