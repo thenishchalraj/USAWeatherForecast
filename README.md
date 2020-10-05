@@ -47,3 +47,9 @@ If want to do the same thing using NodeJS : https://blog.bitsrc.io/https-blog-bi
 </a>
 <!-- [![](https://opencollective.com/html-react-parser/contributors.svg?width=890&button=false)](https://github.com/remarkablemark/html-react-parser/graphs/contributors)
  -->
+
+
+### Contribution guide
+* Look for issues and ask for assignment.
+* Improve UI for the project and send a PR.
+* Add any feature you think should be relevant.
